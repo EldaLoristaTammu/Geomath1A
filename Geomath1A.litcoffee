@@ -130,21 +130,16 @@ $$
 
 ## Penyelesaian Soal 2
 
-Kita harus memeriksa apakah ada baris yang merupakan **kombinasi linear** dari baris lainnya. 
+Kita harus memeriksa apakah ada baris yang merupakan **kombinasi linear** dari baris lainnya.
 
 **Uji apakah baris ketiga ($R_3$) bergantung pada $R_1$ dan $R_2$:**
 
-Coba hitung kombinasi: $2(R_1) + 1(R_2)$
-$$
-= 2(1, 2, 1) + (0, 1, 3)
-$$
-$$
-= (2, 4, 2) + (0, 1, 3) = (2, 5, 5)
-$$
+Coba hitung kombinasi linear berikut:
+$$2(R_1) + 1(R_2) = 2(1, 2, 1) + (0, 1, 3)$$
+$$= (2, 4, 2) + (0, 1, 3)$$
+$$= (2, 5, 5)$$
 
-**Hasil Analisis:**
-Hasil perhitungan adalah $(2, 5, 5)$, sedangkan baris ketiga asli adalah $(2, 5, 7)$.
-Karena $(2, 5, 5) \neq (2, 5, 7)$, maka baris ketiga **Independen Linear**.
+**Hasil Analisis:** Hasil perhitungan adalah $(2, 5, 5)$, sedangkan baris ketiga asli adalah $(2, 5, 7)$. Karena $(2, 5, 5) \neq (2, 5, 7)$, maka baris ketiga bersifat **Independen Linear**.
 
 ---
 
@@ -159,21 +154,68 @@ $$rank(A) = 3$$
 
 ---
 
-## Verifikasi dengan Python (NumPy)
+# Soal 3: Menentukan Rank Dengan Eliminasi Gauss
 
-Anda dapat menggunakan kode berikut di VS Code atau Google Colab untuk membuktikan hasilnya:
+Tentukan rank dari matriks berikut:
 
-```python
-import numpy as np
+$$
+A = \begin{bmatrix} 
+1 & 2 & 1 \\ 
+2 & 4 & 3 \\ 
+3 & 6 & 4 
+\end{bmatrix}
+$$
 
-# Definisi matriks A
-A = np.array([
-    [1, 2, 1],
-    [0, 1, 3],
-    [2, 5, 7]
-])
+---
 
-# Menghitung rank
-rank = np.linalg.matrix_rank(A)
+## Penyelesaian Soal 3
 
-print("Hasil perhitungan Rank A =", rank)
+Gunakan **operasi baris elementer (Eliminasi Gauss)** untuk menghilangkan elemen di bawah elemen pertama.
+
+Operasikan baris kedua dan ketiga
+
+$$
+R_2 = R_2 - 2R_1
+$$
+
+$$
+R_3 = R_3 - 3R_1
+$$
+
+Sehingga diperoleh matriks:
+
+$$
+\begin{bmatrix} 
+1 & 2 & 1 \\ 
+0 & 0 & 1 \\ 
+0 & 0 & 1 
+\end{bmatrix}
+$$
+
+Lakukan operasi baris berikut:
+
+$$
+R_3 = R_3 - R_2
+$$
+
+Maka matriks menjadi:
+
+$$
+\begin{bmatrix} 
+1 & 2 & 1 \\ 
+0 & 0 & 1 \\ 
+0 & 0 & 0 
+\end{bmatrix}
+$$
+
+**Menentukan Rank**
+
+Karena terdapat **2 baris yang tidak nol** (baris 1 dan baris 2) pada bentuk eselon baris tersebut, maka nilai rank-nya adalah: $rank(A) = 2$.
+
+---
+
+## Kesimpulan
+
+Rank matriks dapat ditentukan dengan **mengubah matriks ke bentuk eselon baris menggunakan eliminasi Gauss**.  
+
+Nilai rank sama dengan **jumlah baris yang tidak nol** pada matriks hasil eliminasi.
