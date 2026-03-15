@@ -180,9 +180,9 @@ print("Hasil perhitungan Rank A =", rank)
 
 ---
 
-# Soal 3: Menentukan Rank Dengan Eliminasi Gauss
+# Soal 3: Eliminasi Gauss
 
-**Tentukan rank dari matriks berikut:**
+Tentukan rank dari matriks berikut:
 
 $begin:math:display$
 A \=
@@ -195,7 +195,7 @@ $end:math:display$
 
 ---
 
-## Penyelesaian Soal 2
+## Penyelesaian Soal 3
 
 Gunakan **operasi baris elementer (Eliminasi Gauss)** untuk menghilangkan elemen di bawah elemen pertama.
 
@@ -217,7 +217,7 @@ $begin:math:display$
 \\end\{bmatrix\}
 $end:math:display$
 
-Kemudian lakukan operasi baris berikut
+Kemudian lakukan operasi
 
 $begin:math:display$
 R\_3 \= R\_3 \- R\_2
@@ -235,18 +235,10 @@ $end:math:display$
 
 ---
 
-## Menentukan Rank
+### Kesimpulan
 
-Jumlah baris yang **tidak bernilai nol** adalah **2**, sehingga diperoleh
+Jumlah baris yang **tidak nol adalah 2**, sehingga
 
 $begin:math:display$
-rank\(A\) \= 2
+rank\(A\)\=2
 $end:math:display$
-
----
-
-## Kesimpulan
-
-Rank matriks dapat ditentukan dengan **mengubah matriks ke bentuk eselon baris menggunakan eliminasi Gauss**.  
-
-Nilai rank sama dengan **jumlah baris yang tidak nol** pada matriks hasil eliminasi.
