@@ -9,7 +9,7 @@ Nama Anggota Kelompok 1A
 3. Andrew Rizky Patulak
 4. Elda Lorista Tammu
 5. Faiqah Rifkha Hamzah 
-6. Keyzha Achmad Fachrezi/Ale
+6. Keyzha Achmad Fachrezi
 
 ---
 
