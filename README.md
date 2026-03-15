@@ -1,1 +1,0 @@
-# Geomath1A
