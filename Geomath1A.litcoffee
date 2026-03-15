@@ -35,7 +35,7 @@ Berdasarkan literatur (Chapter 1.2.2), **Rank** dari matriks $A$ berukuran $M \t
 - Jika $rank(A) = \min(M, N)$, matriks disebut **Full Rank**.
 - Jika $rank(A) < \min(M, N)$, matriks disebut **Rank Deficient** (Singular).
 
-> **Pesan Dosen:** Dalam geofisika, *rank deficient* sering terjadi jika sensor kita diletakkan terlalu berdekatan sehingga merekam informasi yang sama (redundant).
+> Dalam geofisika, *rank deficient* sering terjadi jika sensor kita diletakkan terlalu berdekatan sehingga merekam informasi yang sama (redundant).
 
 ---
 
