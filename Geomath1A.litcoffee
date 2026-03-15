@@ -113,7 +113,7 @@ $$rank(A) = 1$$
 
 ---
 
-# Analisis Rank Matriks: Soal 2
+# Soal 2: Analisis Rank Matriks
 
 **Tentukan rank dari matriks berikut:**
 
@@ -128,7 +128,7 @@ $$
 
 ---
 
-## Langkah Penyelesaian
+## Penyelesaian Soal 2
 
 Kita harus memeriksa apakah ada baris yang merupakan **kombinasi linear** dari baris lainnya. 
 
@@ -178,4 +178,75 @@ rank = np.linalg.matrix_rank(A)
 
 print("Hasil perhitungan Rank A =", rank)
 
+---
 
+# Soal 3: Menentukan Rank Dengan Eliminasi Gauss
+
+**Tentukan rank dari matriks berikut:**
+
+$begin:math:display$
+A \=
+\\begin\{bmatrix\}
+1 \& 2 \& 1 \\\\
+2 \& 4 \& 3 \\\\
+3 \& 6 \& 4
+\\end\{bmatrix\}
+$end:math:display$
+
+---
+
+## Penyelesaian Soal 2
+
+Gunakan **operasi baris elementer (Eliminasi Gauss)** untuk menghilangkan elemen di bawah elemen pertama.
+
+$begin:math:display$
+R\_2 \= R\_2 \- 2R\_1
+$end:math:display$
+
+$begin:math:display$
+R\_3 \= R\_3 \- 3R\_1
+$end:math:display$
+
+Sehingga diperoleh matriks
+
+$begin:math:display$
+\\begin\{bmatrix\}
+1 \& 2 \& 1 \\\\
+0 \& 0 \& 1 \\\\
+0 \& 0 \& 1
+\\end\{bmatrix\}
+$end:math:display$
+
+Kemudian lakukan operasi baris berikut
+
+$begin:math:display$
+R\_3 \= R\_3 \- R\_2
+$end:math:display$
+
+Maka matriks menjadi
+
+$begin:math:display$
+\\begin\{bmatrix\}
+1 \& 2 \& 1 \\\\
+0 \& 0 \& 1 \\\\
+0 \& 0 \& 0
+\\end\{bmatrix\}
+$end:math:display$
+
+---
+
+## Menentukan Rank
+
+Jumlah baris yang **tidak bernilai nol** adalah **2**, sehingga diperoleh
+
+$begin:math:display$
+rank\(A\) \= 2
+$end:math:display$
+
+---
+
+## Kesimpulan
+
+Rank matriks dapat ditentukan dengan **mengubah matriks ke bentuk eselon baris menggunakan eliminasi Gauss**.  
+
+Nilai rank sama dengan **jumlah baris yang tidak nol** pada matriks hasil eliminasi.
