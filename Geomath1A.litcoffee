@@ -219,3 +219,92 @@ Karena terdapat **2 baris yang tidak nol** (baris 1 dan baris 2) pada bentuk ese
 Rank matriks dapat ditentukan dengan **mengubah matriks ke bentuk eselon baris menggunakan eliminasi Gauss**.  
 
 Nilai rank sama dengan **jumlah baris yang tidak nol** pada matriks hasil eliminasi.
+
+---
+
+## Soal 4: Analisis Row Space (Ruang Baris)
+
+**Tentukan basis dari Row Space dan dimensi (rank) dari matriks berikut:**
+
+$$
+B = 
+\begin{bmatrix} 
+1 & -1 & 2 \\ 
+0 & 1 & 3 \\ 
+1 & 0 & 5 
+\end{bmatrix}
+$$
+
+### Penyelesaian Soal 4
+
+Untuk mencari basis ruang baris, kita gunakan operasi baris elementer untuk mencapai bentuk *Row Echelon Form*:
+
+1.  **Baris ketiga ($R_3$):** Lakukan $R_3 - R_1$
+    
+$$
+\begin{bmatrix} 
+1 & -1 & 2 \\ 
+0 & 1 & 3 \\ 
+0 & 1 & 3 
+\end{bmatrix}
+$$
+
+2.  **Baris ketiga ($R_3$):** Lakukan $R_3 - R_2$
+    
+$$
+\begin{bmatrix} 
+1 & -1 & 2 \\ 
+0 & 1 & 3 \\ 
+0 & 0 & 0 
+\end{bmatrix}
+$$
+
+**Analisis:**
+* Baris ketiga menjadi nol karena $R_3$ merupakan kombinasi linear dari $R_1$ dan $R_2$ ($R_3 = R_1 + R_2$).
+* Terdapat **2 baris independen** yang tersisa.
+
+**Maka:**
+* **Basis Row Space:** $\{(1, -1, 2), (0, 1, 3)\}$
+* **Rank(B):** $2$
+
+---
+
+## Soal 5: Analisis Nullity (Nulitas)
+
+**Hitunglah Nulitas (dimensi dari Null Space) dari matriks berikut:**
+
+$$
+C = 
+\begin{bmatrix} 
+1 & 2 & 3 \\ 
+2 & 4 & 6 
+\end{bmatrix}
+$$
+
+### Penyelesaian Soal 5
+
+Nulitas adalah jumlah variabel bebas dalam solusi sistem homogen $Ax = 0$.
+
+1.  **Reduksi Matriks:**
+    Lakukan $R_2 - 2R_1$ untuk menyederhanakan matriks:
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 0 & 0
+\end{bmatrix}
+$$
+
+2.  **Persamaan Persamaan:**
+    Hanya tersisa satu persamaan aktif: $x_1 + 2x_2 + 3x_3 = 0$.
+    * $x_1 = -2x_2 - 3x_3$
+    * $x_2$ dan $x_3$ adalah **variabel bebas** (parameter).
+
+
+**Kesimpulan:**
+Karena terdapat **2 variabel bebas** yang menentukan solusi sistem tersebut, maka:
+$$Nullity(C) = 2$$
+
+> **Catatan:** Sesuai dengan *Rank-Nullity Theorem*: 
+> $Rank(C) + Nullity(C) = n$ (jumlah kolom).
+> $1 + 2 = 3$ (Terbukti).
