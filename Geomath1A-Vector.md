@@ -1777,8 +1777,7 @@ Maka,
 - Polar/Silinder/Spherical → untuk kasus khusus
 - Penting dalam analisis geofisika
 ---
----
-marp: true
+
 ---
 
 # Matematika Geofisika: Aljabar Matriks
