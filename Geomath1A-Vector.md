@@ -3347,6 +3347,7 @@ Tanpa konsep ini:
 
 ## 1.2.5 Inverse of a Matrix 
 Dalam geofisika, kita sering menyelesaikan sistem persamaan linier:
+
 $$
 Ax = b
 $$
@@ -3367,9 +3368,11 @@ $$
 
 ## 1. Definisi Invers Matriks
 Sebuah matriks persegi $A$ dikatakan memiliki invers jika terdapat matriks $A^{-1}$ sehingga:
+
 $$
 A A^{-1} = A^{-1} A = I
 $$
+
 Dimana:
 - $I$ adalah **matriks identitas**
 - $A^{-1}$ adalah **inverse dari $A$**
@@ -3382,10 +3385,13 @@ Suatu matriks $A$ memiliki invers jika:
 
 1. Matriks berbentuk **persegi** ($n \times n$)
 2. **Determinannya tidak nol**
+   
    $$
    \det(A) \neq 0
    $$
-3. Memiliki **Full Rank**
+   
+4. Memiliki **Full Rank**
+   
    $$
    rank(A) = n
    $$
@@ -3484,11 +3490,15 @@ d & -b \\
 -c & a
 \end{bmatrix}
 $$
+
 Hitung determinan:
+
 $$
 \det(A) = (2)(3) - (1)(5) = 6 - 5 = 1
 $$
+
 Maka:
+
 $$
 A^{-1} =
 \begin{bmatrix}
@@ -3496,12 +3506,14 @@ A^{-1} =
 -5 & 2
 \end{bmatrix}
 $$
+
 ## Kesimpulan
 Karena determinan tidak nol, maka matriks memiliki invers.
 
 ---
 # Soal 2: Invers Dengan Gauss-Jordan
 Tentukan invers dari:
+
 $$
 A =
 \begin{bmatrix}
@@ -3513,6 +3525,7 @@ $$
 ---
 ## Penyelesaian Soal 2
 Bentuk matriks augment:
+
 $$
 \left[
 \begin{array}{cc|cc}
@@ -3521,10 +3534,13 @@ $$
 \end{array}
 \right]
 $$
+
 ### Langkah 1:
+
 $$
 R_2 = R_2 - 3R_1
 $$
+
 ---
 $$
 \begin{bmatrix}
@@ -3657,8 +3673,7 @@ x = A^{-1} b =
 \end{bmatrix}
 $$
 
-$$
-=
+$$ =
 \begin{bmatrix}
 2 \\
 3
@@ -3704,9 +3719,11 @@ Transformasi ini memungkinkan kita mengubah matriks menjadi bentuk yang lebih se
 ---
 ## 1. Similarity Transformation
 Dua matriks $A$ dan $B$ dikatakan **similar** jika:
+
 $$
 B = P^{-1} A P
 $$
+
 Dimana:
 - $P$ adalah matriks invertible
 - $P^{-1}$ adalah invers dari $P$
@@ -3742,6 +3759,7 @@ Sebuah matriks dapat didiagonalkan jika:
 
 - Memiliki **n eigenvector yang bebas linier**
 - Atau:
+  
   $$
   \text{Jumlah eigenvector independen} = n
   $$
@@ -3751,15 +3769,16 @@ Sebuah matriks dapat didiagonalkan jika:
 ## 3. Langkah Diagonalization
 
 1. Cari eigenvalues:
+   
    $$
    \det(A - \lambda I) = 0
    $$
 
-2. Cari eigenvector untuk setiap eigenvalue
+3. Cari eigenvector untuk setiap eigenvalue
 
-3. Bentuk matriks $P$ dari eigenvector
+4. Bentuk matriks $P$ dari eigenvector
 
-4. Bentuk matriks diagonal $D$
+5. Bentuk matriks diagonal $D$
 
 ---
 
@@ -3865,6 +3884,7 @@ Hasil:
 - $x_1$ bebas
 ---
 Eigenvector:
+
 $$
 v_1 =
 \begin{bmatrix}
@@ -3882,6 +3902,7 @@ v_2 =
 1
 \end{bmatrix}
 $$
+
 Jadi, 
 
 Eigenvector saling ortogonal dan membentuk basis.
@@ -3993,6 +4014,7 @@ D =
 0 & 2
 \end{bmatrix}
 $$
+
 Maka, 
 
 $$
@@ -4215,9 +4237,11 @@ $$
 ## 6. Matriks Singular & Non-Singular
 - **Non-Singular:** memiliki invers
 - **Singular:** tidak memiliki invers
+  
 $$
 \det(A) = 0 \Rightarrow \text{Singular}
 $$
+
 ---
 
 ## 7. Matriks Upper & Lower Triangular
@@ -4323,6 +4347,7 @@ Karena $A = A^T$, maka matriks adalah **simetris**.
 
 # Soal 3: Matriks Ortogonal
 Tentukan apakah matriks berikut ortogonal:
+
 $$
 A =
 \begin{bmatrix}
@@ -4330,8 +4355,10 @@ A =
 1 & 0
 \end{bmatrix}
 $$
+
 ## Penyelesaian Soal 3
 Hitung:
+
 $$
 A^T =
 \begin{bmatrix}
@@ -4339,6 +4366,7 @@ A^T =
 -1 & 0
 \end{bmatrix}
 $$
+
 $$
 A^T A =
 \begin{bmatrix}
@@ -4346,6 +4374,7 @@ A^T A =
 0 & 1
 \end{bmatrix}
 $$
+
 --- 
 
 ### Kesimpulan
@@ -5146,8 +5175,7 @@ uv^T =
 \end{bmatrix}
 \begin{bmatrix}
 1 & 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 1 & 1 \\
 1 & 1
@@ -5158,8 +5186,7 @@ $$
 
 ### 2. Hitung $A + uv^T$
 
-$$
-=
+$$ =
 \begin{bmatrix}
 2 & 1 \\
 1 & 2
@@ -5212,8 +5239,7 @@ $$
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
-\end{bmatrix}
--
+\end{bmatrix} -
 \frac{1}{3}
 \begin{bmatrix}
 1 & 1 \\
@@ -5223,8 +5249,7 @@ $$
 
 ---
 
-$$
-=
+$$ =
 \frac{1}{3}
 \begin{bmatrix}
 2 & -1 \\
@@ -5306,8 +5331,7 @@ $$
 
 ---
 
-$$
-=
+$$ =
 A^{-1} - \frac{A^{-1}uv^TA^{-1}}{1.5}
 $$
 
@@ -5797,6 +5821,7 @@ Contoh:
 ## 4. Hubungan dengan Determinan
 
 Untuk mencari eigenvalue, digunakan:
+
 $$
 det(A - \lambda I) = 0
 $$
@@ -5849,13 +5874,17 @@ $$
 ### 2. Cari Eigenvector
 
 Untuk $\lambda = 2$:
+
 $$
-(A - 2I)x = 0 \Rightarrow x = \begin{bmatrix}1 \\ 0\end{bmatrix}
+(A - 2I)x = 0 \Rightarrow x = \begin{bmatrix}1 \\
+0\end{bmatrix}
 $$
 
 Untuk $\lambda = 3$:
+
 $$
-(A - 3I)x = 0 \Rightarrow x = \begin{bmatrix}0 \\ 1\end{bmatrix}
+(A - 3I)x = 0 \Rightarrow x = \begin{bmatrix}0 \\
+1\end{bmatrix}
 $$
 
 ---
@@ -6057,6 +6086,7 @@ Hal ini biasanya terjadi karena:
 ## 1. Definisi Matriks Singular
 
 Sebuah matriks $A$ disebut **singular** jika:
+
 $$
 det(A) = 0
 $$
@@ -6070,6 +6100,7 @@ Konsekuensinya:
 ## 2. Hubungan dengan Rank
 
 Matriks singular memiliki sifat:
+
 $$
 rank(A) < n
 $$
@@ -6083,6 +6114,7 @@ Artinya:
 ## 3. Jenis Solusi pada Singular Case
 
 Untuk sistem:
+
 $$
 Ax = b
 $$
@@ -6154,6 +6186,7 @@ $$
 ### Kesimpulan
 
 Karena:
+
 $$
 det(A) = 0
 $$
@@ -6215,6 +6248,7 @@ $$
 
 - Ada 2 baris tidak nol
 - Maka:
+  
 $$
 rank(A) = 2 < 3
 $$
@@ -6246,11 +6280,13 @@ $$
 Persamaan kedua adalah kelipatan persamaan pertama.
 
 Maka:
+
 $$
 x + 2y = 4
 $$
 
 Misal:
+
 $$
 y = t
 $$
@@ -6315,6 +6351,7 @@ $$
 
 - Kedua baris identik → data redundan
 - Rank:
+  
 $$
 rank(A) = 1
 $$
@@ -6346,6 +6383,7 @@ Pemahaman singular case sangat penting untuk menghindari kesalahan interpretasi 
 Dalam praktik geofisika, sering kali kita memiliki **jumlah parameter model lebih banyak dibanding jumlah data**.
 
 Secara matematis:
+
 $$
 Ax = b
 $$
@@ -6388,6 +6426,7 @@ Ini disebut sebagai:
 ## 2. Hubungan dengan Rank dan Null Space
 
 Jika:
+
 $$
 rank(A) = r
 $$
@@ -6395,11 +6434,13 @@ $$
 Maka:
 
 - Jumlah variabel bebas:
+  
 $$
 n - r
 $$
 
 - Dimensi Null Space:
+  
 $$
 \text{Nullity}(A) = n - r
 $$
@@ -6423,6 +6464,7 @@ Dimana:
 ## 3. Bentuk Solusi Umum
 
 Jika sistem:
+
 $$
 Ax = b
 $$
@@ -6491,6 +6533,7 @@ Maka:
 ## Analisis Rank
 
 Persamaan kedua:
+
 $$
 2(x + y + z) = 6
 $$
@@ -6498,6 +6541,7 @@ $$
 → Tidak independen
 
 Sehingga:
+
 $$
 rank(A) = 1
 $$
@@ -6507,6 +6551,7 @@ $$
 ## Kesimpulan
 
 Jumlah variabel bebas:
+
 $$
 n - r = 3 - 1 = 2
 $$
@@ -6531,6 +6576,7 @@ $$
 ## Penyelesaian Soal 2
 
 Persamaan:
+
 $$
 x + y + z = 3
 $$
@@ -6540,6 +6586,7 @@ Misal:
 - $z = t$
 
 Maka:
+
 $$
 x = 3 - s - t
 $$
@@ -6566,12 +6613,10 @@ $$
 x =
 \begin{bmatrix}
 3 \\ 0 \\ 0
-\end{bmatrix}
-+ s
+\end{bmatrix} + s
 \begin{bmatrix}
 -1 \\ 1 \\ 0
-\end{bmatrix}
-+ t
+\end{bmatrix} +t
 \begin{bmatrix}
 -1 \\ 0 \\ 1
 \end{bmatrix}
@@ -6631,6 +6676,7 @@ Misal:
 - $z = t$
 
 Maka:
+
 $$
 x = 4 - 2s - t
 $$
@@ -6665,6 +6711,7 @@ Ax = b
 $$
 
 Dengan:
+
 $$
 A =
 \begin{bmatrix}
@@ -6744,9 +6791,11 @@ $$
 
 - $m < n$ → underdetermined
 - Solusi:
+  
 $$
 x = x_p + x_n
 $$
+
 - Dimensi solusi = nullity
 - Masalah utama: **non-uniqueness**
 
@@ -6755,6 +6804,7 @@ $$
 Dalam eksplorasi geofisika, sering kali jumlah data pengamatan **lebih banyak dibanding jumlah parameter model**.
 
 Secara matematis:
+
 $$
 Ax = b
 $$
@@ -6796,6 +6846,7 @@ Akibatnya:
 ## 2. Konsistensi Sistem
 
 Sistem:
+
 $$
 Ax = b
 $$
@@ -6847,6 +6898,7 @@ $$
 
 - $Ax$ adalah proyeksi dari $b$ ke Column Space
 - Error:
+- 
 $$
 e = b - Ax
 $$
@@ -6858,6 +6910,7 @@ $$
 ## 4. Hubungan dengan Rank
 
 Jika:
+
 $$
 rank(A) = n
 $$
@@ -6958,6 +7011,7 @@ Sesuai!
 
 Sistem **kebetulan konsisten**  
 → solusi eksak ada:
+
 $$
 (x,y) = (1,1)
 $$
@@ -6979,6 +7033,7 @@ $$
 ## Penyelesaian Soal 3
 
 Dari dua persamaan pertama:
+
 $$
 x = 1,\quad y = 1
 $$
@@ -7033,8 +7088,7 @@ A^T A =
 1 & 1 \\
 2 & 1 \\
 3 & 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 14 & 6 \\
 6 & 3
@@ -7051,8 +7105,7 @@ A^T b =
 \end{bmatrix}
 \begin{bmatrix}
 2 \\ 3 \\ 10
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 38 \\
 15
@@ -7082,6 +7135,7 @@ $$
 Menyelesaikan sistem:
 
 Hasil:
+
 $$
 x \approx 2.5,\quad y \approx -0.5
 $$
@@ -7106,6 +7160,7 @@ Misalkan:
 ## Analisis
 
 Data:
+
 $$
 b = Ax + noise
 $$
@@ -7145,11 +7200,13 @@ Digunakan untuk:
 - $m > n$ → overdetermined
 - Biasanya tidak ada solusi eksak
 - Gunakan:
+  
 $$
 \min ||Ax - b||
 $$
 
 - Solusi:
+  
 $$
 x = (A^T A)^{-1}A^T b
 $$
@@ -7581,6 +7638,7 @@ P_k = 1
 $$
 
 Data baru:
+
 $$
 a_{k+1} = 3, \quad b_{k+1} = 10
 $$
