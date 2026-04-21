@@ -3178,6 +3178,7 @@ $$
 $$
 \lambda_1 = 2,\quad \lambda_2 = 3
 $$
+
 ---
 
 ## Interpretasi
@@ -3220,7 +3221,8 @@ $$
 Eigenvector untuk $\lambda=2$:
 
 $$
-\{ \begin{bmatrix}1 \\ 0\end{bmatrix} \}
+\{ \begin{bmatrix}1 \\
+0\end{bmatrix} \}
 $$
 
 ---
