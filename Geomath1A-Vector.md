@@ -2267,8 +2267,7 @@ AB =
 \begin{bmatrix}
 (1)(2)+(2)(1) & (1)(0)+(2)(2) \\
 (3)(2)+(4)(1) & (3)(0)+(4)(2)
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 4 & 4 \\
 10 & 8
@@ -2415,20 +2414,17 @@ x =
 $$
 
 
-$$
-=
+$$ =
 \frac{1}{-3}
 \begin{bmatrix}
 5 - 8 \\
 -10 + 4
-\end{bmatrix}
-=
+\end{bmatrix} =
 \frac{1}{-3}
 \begin{bmatrix}
 -3 \\
 -6
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 1 \\
 2
@@ -2466,8 +2462,8 @@ $$
 - **$b$** → data observasi
 
 Masalah utama:
-👉 Apakah sistem ini punya solusi?
-👉 Apakah solusinya unik?
+Apakah sistem ini punya solusi?
+Apakah solusinya unik?
 
 Jawabannya ditentukan oleh **Rank dan Row Space**
 
@@ -2521,7 +2517,7 @@ R_2 = 2R_1
 $$
 
 Maka:
-👉 tidak menambah informasi baru
+tidak menambah informasi baru
 
 ---
 
@@ -2532,7 +2528,7 @@ $$
 $$
 
 Artinya:
-👉 Rank = jumlah basis ruang baris
+Rank = jumlah basis ruang baris
 
 ---
 
@@ -2966,9 +2962,9 @@ Gunakan ekspansi:
 
 $$
 \det(A) =
-1(1\cdot0 - 4\cdot6)
-- 2(0\cdot0 - 4\cdot5)
-+ 3(0\cdot6 - 1\cdot5)
+1 (1\cdot0 - 4\cdot6)
+- 2 (0\cdot0 - 4\cdot5)
++ 3 (0\cdot6 - 1\cdot5)
 $$
 
 $$
