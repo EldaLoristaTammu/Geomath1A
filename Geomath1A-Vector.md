@@ -2962,9 +2962,9 @@ Gunakan ekspansi:
 
 $$
 \det(A) =
-1 (1\cdot0 - 4\cdot6)
-- 2 (0\cdot0 - 4\cdot5)
-+ 3 (0\cdot6 - 1\cdot5)
+1(1\cdot0 - 4\cdot6)
+2(0\cdot0 - 4\cdot5)
+3(0\cdot6 - 1\cdot5)
 $$
 
 $$
