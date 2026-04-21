@@ -1660,6 +1660,7 @@ z = 5
 $$
 
 Jadi,
+
 $$
 (\sqrt{18}, 45^\circ, 5)
 $$
@@ -2209,8 +2210,8 @@ $$
 
 ### Penyelesaian
 
-Penjumlahan:
 
+Penjumlahan:
 
 $$
 A + B =
