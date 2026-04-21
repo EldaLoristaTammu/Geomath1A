@@ -2217,8 +2217,7 @@ A + B =
 \begin{bmatrix}
 2+1 & 1+4 \\
 0+5 & 3+2
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 3 & 5 \\
 5 & 5
