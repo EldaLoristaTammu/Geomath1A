@@ -3385,16 +3385,16 @@ Suatu matriks $A$ memiliki invers jika:
 
 1. Matriks berbentuk **persegi** ($n \times n$)
 2. **Determinannya tidak nol**
-   
-   $$
-   \det(A) \neq 0
-   $$
+
+$$
+\det(A)\neq 0
+$$
    
 4. Memiliki **Full Rank**
-   
-   $$
-   rank(A) = n
-   $$
+  
+$$
+rank (A) = n
+$$
 
 ---
 
@@ -3483,6 +3483,7 @@ $$
 
 ## Penyelesaian Soal 1
 Gunakan rumus:
+
 $$
 A^{-1} = \frac{1}{ad - bc}
 \begin{bmatrix}
@@ -3760,9 +3761,9 @@ Sebuah matriks dapat didiagonalkan jika:
 - Memiliki **n eigenvector yang bebas linier**
 - Atau:
   
-  $$
-  \text{Jumlah eigenvector independen} = n
-  $$
+$$
+\text{Jumlah eigenvector independen} = n
+$$
 
 ---
 
@@ -3770,9 +3771,9 @@ Sebuah matriks dapat didiagonalkan jika:
 
 1. Cari eigenvalues:
    
-   $$
-   \det(A - \lambda I) = 0
-   $$
+$$
+\det(A - \lambda I) = 0
+$$
 
 3. Cari eigenvector untuk setiap eigenvalue
 
@@ -5234,8 +5235,7 @@ $$
 
 ---
 
-$$
-=
+$$ =
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
@@ -5865,6 +5865,7 @@ det(A - \lambda I) =
 $$
 
 Sehingga:
+
 $$
 \lambda_1 = 2, \quad \lambda_2 = 3
 $$
@@ -6689,12 +6690,10 @@ $$
 x =
 \begin{bmatrix}
 4 \\ 0 \\ 0
-\end{bmatrix}
-+ s
+\end{bmatrix} + s
 \begin{bmatrix}
 -2 \\ 1 \\ 0
-\end{bmatrix}
-+ t
+\end{bmatrix} + t
 \begin{bmatrix}
 -1 \\ 0 \\ 1
 \end{bmatrix}
