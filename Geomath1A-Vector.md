@@ -2213,7 +2213,7 @@ $$
 Penjumlahan:
 
 $$
-A + B =
+A + B = 
 \begin{bmatrix}
 2+1 & 1+4 \\
 0+5 & 3+2
@@ -2225,7 +2225,6 @@ A + B =
 \end{bmatrix}
 $$
 
----
 Pengurangan:
 
 $$
