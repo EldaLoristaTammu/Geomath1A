@@ -1628,6 +1628,7 @@ y = 10 \sin 30^\circ = 10 \cdot \frac{1}{2} = 5
 $$
 
 Jadi,
+
 $$
 (10,30^\circ) \rightarrow (5\sqrt{3}, 5)
 $$
@@ -1730,11 +1731,13 @@ Metode **Gram-Schmidt Orthogonalization** digunakan untuk mengubah sekumpulan ve
 ## 1. Definisi Gram-Schmidt
 
 Diberikan sekumpulan vektor bebas linier:
+
 $$
 \{v_1, v_2, ..., v_n\}
 $$
 
 Gram-Schmidt mengubahnya menjadi:
+
 $$
 \{u_1, u_2, ..., u_n\}
 $$
@@ -1742,6 +1745,7 @@ $$
 dengan sifat:
 - $u_i \cdot u_j = 0$ untuk $i \neq j$ (ortogonal)
 - Span tetap sama:
+
 $$
 span\{v_1,...,v_n\} = span\{u_1,...,u_n\}
 $$
@@ -1800,6 +1804,7 @@ Dalam konteks geofisika:
 # Soal 1: Ortogonalisasi Dua Vektor
 
 Diberikan vektor:
+
 $$
 v_1 = (1, 1), \quad v_2 = (1, 0)
 $$
@@ -1860,6 +1865,7 @@ $$
 ## Kesimpulan
 
 Himpunan ortogonal:
+
 $$
 u_1 = (1,1), \quad u_2 = \left(\frac{1}{2}, -\frac{1}{2}\right)
 $$
@@ -1869,6 +1875,7 @@ $$
 # Soal 2: Ortogonalisasi Tiga Vektor
 
 Diberikan:
+
 $$
 v_1 = (1,0,0), \quad v_2 = (1,1,0), \quad v_3 = (1,1,1)
 $$
@@ -1903,11 +1910,13 @@ $$
 ### Langkah 3:
 
 Hitung proyeksi ke $u_1$:
+
 $$
 proj_{u_1}(v_3) = (1,0,0)
 $$
 
 Hitung proyeksi ke $u_2$:
+
 $$
 proj_{u_2}(v_3) = (0,1,0)
 $$
@@ -1933,6 +1942,7 @@ $$
 ## Kesimpulan
 
 Hasil ortogonal:
+
 $$
 u_1 = (1,0,0), \quad u_2 = (0,1,0), \quad u_3 = (0,0,1)
 $$
@@ -1985,6 +1995,7 @@ $$
 ## Kesimpulan
 
 Basis ortonormal:
+
 $$
 e_1 = \frac{1}{\sqrt{2}}(1,1), \quad
 e_2 = \frac{1}{\sqrt{2}}(1,-1)
@@ -1995,6 +2006,7 @@ $$
 # Soal 4: Interpretasi Geofisika
 
 Misalkan dua sinyal pengukuran memiliki bentuk:
+
 $$
 v_1 = (2,2), \quad v_2 = (4,4)
 $$
@@ -2004,6 +2016,7 @@ $$
 ## Penyelesaian Soal 4
 
 Terlihat bahwa:
+
 $$
 v_2 = 2v_1
 $$
@@ -2051,11 +2064,13 @@ Operasi dasar matriks sangat penting karena:
 Dua matriks dapat dijumlahkan jika memiliki ukuran yang sama.
 
 Jika:
+
 $$
 A = [a_{ij}], \quad B = [b_{ij}]
 $$
 
 Maka:
+
 $$
 A + B = [a_{ij} + b_{ij}]
 $$
@@ -2098,6 +2113,7 @@ C = AB
 $$
 
 Dengan:
+
 $$
 c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}
 $$
@@ -2120,6 +2136,7 @@ AI = IA = A
 $$
 
 Contoh:
+
 $$
 I =
 \begin{bmatrix}
@@ -2194,6 +2211,7 @@ $$
 
 Penjumlahan:
 
+
 $$
 A + B =
 \begin{bmatrix}
@@ -2243,6 +2261,7 @@ $$
 ---
 
 ### Penyelesaian
+
 
 $$
 AB =
@@ -2382,6 +2401,7 @@ $$
 
 Kalikan:
 
+
 $$
 x =
 \frac{1}{-3}
@@ -2394,6 +2414,7 @@ x =
 4
 \end{bmatrix}
 $$
+
 
 $$
 =
