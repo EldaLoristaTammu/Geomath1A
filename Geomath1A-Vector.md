@@ -1824,6 +1824,7 @@ proj_{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1} u_1
 $$
 
 Hitung dot product:
+
 $$
 v_2 \cdot u_1 = (1)(1) + (0)(1) = 1
 $$
@@ -1833,6 +1834,7 @@ u_1 \cdot u_1 = 1^2 + 1^2 = 2
 $$
 
 Maka:
+
 $$
 proj_{u_1}(v_2) = \frac{1}{2}(1,1) = \left(\frac{1}{2}, \frac{1}{2}\right)
 $$
