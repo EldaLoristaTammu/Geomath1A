@@ -3117,7 +3117,7 @@ det(A - \lambda I) = 0
 $$
 
 Ini disebut:
-👉 **Persamaan karakteristik**
+ **Persamaan karakteristik**
 
 ## 3. Cara Mencari Eigenvector
 
@@ -3148,6 +3148,7 @@ Contoh:
 
 # Soal 1: Mencari Eigenvalue
 Tentukan eigenvalue dari matriks:
+
 $$
 A =
 \begin{bmatrix}
@@ -3155,20 +3156,25 @@ A =
 0 & 3
 \end{bmatrix}
 $$
+
 ## Penyelesaian Soal 1
 Gunakan:
+
 $$
 det(A - \lambda I) = 0
 $$
+
 $$
 \begin{vmatrix}
 2-\lambda & 0 \\
 0 & 3-\lambda
 \end{vmatrix} = 0
 $$
+
 $$
 (2-\lambda)(3-\lambda) = 0
 $$
+
 $$
 \lambda_1 = 2,\quad \lambda_2 = 3
 $$
@@ -3204,7 +3210,7 @@ x_2 = 0
 $$
 Maka:
 $$
-x = \begin{bmatrix} x_1 \\ 0 \end{bmatrix}
+x =\begin{bmatrix} x_1 \\ 0 \end{bmatrix}
 $$
 
 ---
@@ -3214,7 +3220,7 @@ $$
 Eigenvector untuk $\lambda=2$:
 
 $$
-\left\{ \begin{bmatrix}1 \\ 0\end{bmatrix} \right\}
+\{ \begin{bmatrix}1 \\ 0\end{bmatrix} \}
 $$
 
 ---
