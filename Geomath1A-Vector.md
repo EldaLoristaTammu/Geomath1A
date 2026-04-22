@@ -1601,6 +1601,7 @@ $$
 $$
 
 Jadi, 
+
 $$
 (3,4) \rightarrow (5, \theta)
 $$
