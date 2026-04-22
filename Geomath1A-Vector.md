@@ -5762,6 +5762,7 @@ $$
 Dalam geofisika, banyak fenomena dapat direpresentasikan sebagai transformasi linier, seperti deformasi batuan atau propagasi gelombang.
 
 Transformasi ini sering dituliskan sebagai:
+
 $$
 Ax = \lambda x
 $$
